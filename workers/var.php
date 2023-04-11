@@ -1,6 +1,13 @@
 <?php
 
-// $base_url = "http://192.168.1.228:80/regional-mock";
+/**
+ * Use http://<IPv4>:<Port>/regional-mock; 
+ * Where Port is the port in which the server is running on of your computer,
+ * And IPv4 is the IPv4 of your machine on the network it is connected to.
+ * Eg. http://192.168.2.2:80/regional-mock
+ * Read README.md for details.
+ */ 
+
 $base_url = "http://localhost/regional-mock";
 
 $conn = "";

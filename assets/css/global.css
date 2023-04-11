@@ -1,9 +1,9 @@
 :root {
   --error: orangered;
   --success: green;
-  ---warning: orange;
-  ---orange: orangered;
-  ---mtn: orange;
+  --warning: orange;
+  --orange: orangered;
+  --mtn: orange;
   --white: white;
   --black: black;
   --mid-dark: rgba(33, 35, 38, 0.5);

@@ -13,7 +13,7 @@
       <div class="body">
         <div class="mw-400">
             <h2>Select payment method</h2>
-            <a class = "btn-light mtn-btn" href = "<?php echo "$base_url/pages/mtn-payment.php"; ?>">MTM Mobile Money</a>
+            <a class = "btn-light mtn-btn" href = "<?php echo "$base_url/pages/mtn-payment.php"; ?>">MTN Mobile Money</a>
             <a class = "btn-dark orange-btn" href = "<?php echo "$base_url/pages/orange-payment.php"; ?>">Orange Money</a>
             <a class = "btn-dark" href = "<?php echo "$base_url/pages/card-payment.php"; ?>">Credit/Debit Card</a>
           </div>
