@@ -1,0 +1,118 @@
+:root {
+  --error: orangered;
+  --success: green;
+  ---warning: orange;
+  ---orange: orangered;
+  ---mtn: orange;
+  --white: white;
+  --black: black;
+  --mid-dark: rgba(33, 35, 38, 0.5);
+  --light-dark: rgba(33, 35, 38, 0.1);
+  --transparent: rgba(0, 0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  min-height: calc(100vh - 50px);
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+header .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 10% 0 10%;
+}
+
+.w-80 {
+  width: 80%;
+}
+.mw-400 {
+  max-width: 400px;
+  width: 80%;
+}
+
+.mw-400 .input-container {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+button,
+.btn {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto;
+}
+button:focus {
+  outline: none;
+}
+
+.btn-light,
+.btn-dark {
+  border: 1px solid var(--mid-dark);
+  padding: 10px 20px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-dark {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.btn-light::before,
+.btn-dark::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background-color: var(--light-dark);
+  transition: 300ms right;
+}
+
+.btn-light:hover::before,
+.btn-dark:hover::before {
+  right: 0;
+}
+
+.error {
+  color: var(--error);
+}
+.success {
+  color: var(--success);
+}
+.warning {
+  color: var(--warning);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .body > * {
+    width: 100% !important;
+  }
+}
+
+[hidden] {
+  display: none !important;
+}

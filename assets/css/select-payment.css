@@ -1,0 +1,15 @@
+.select-payment .mw-400 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mtn-btn {
+  background-color: var(--mtn);
+  color: var(--black);
+  font-weight: bolder;
+}
+.orange-btn {
+  background-color: var(--orange);
+  font-weight: bolder;
+  color: var(--white);
+}

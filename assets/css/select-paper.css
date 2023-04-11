@@ -1,0 +1,16 @@
+#selected-container > div {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 3px;
+  padding: 5px;
+  border-radius: 8px;
+}
+#selected-container > div.error {
+  border: none;
+}
+
+#selected-container > div button {
+  color: var(--error);
+  font-weight: bolder;
+}

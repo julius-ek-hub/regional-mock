@@ -1,0 +1,15 @@
+.registration-receipt .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registration-receipt .print-btn {
+  margin-top: 20px;
+}
+.registration-receipt .logo-container,
+.registration-receipt h1 {
+  text-align: center;
+}
+.registration-receipt .logo-container img {
+  width: 100px;
+}

@@ -1,0 +1,32 @@
+.account .actions-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.account .actions-div .filter-by {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.account hr {
+  margin: 30px 0;
+}
+.account table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.account table td,
+.account table th {
+  text-align: left;
+  padding: 10px;
+}
+.account table th {
+  white-space: nowrap;
+}
+
+.account table tr:nth-child(odd) {
+  background-color: var(--light-dark);
+}

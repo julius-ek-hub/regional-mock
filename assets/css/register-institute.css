@@ -1,0 +1,22 @@
+#selected-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#selected-container > div {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 3px;
+  border: 1px solid var(--mid-dark);
+  padding: 5px;
+  border-radius: 8px;
+}
+#selected-container > div.error {
+  border: none;
+}
+
+#selected-container > div button {
+  color: var(--error);
+  font-weight: bolder;
+}

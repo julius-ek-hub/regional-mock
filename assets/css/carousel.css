@@ -1,0 +1,76 @@
+.carousel {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  align-items: center;
+}
+
+.carousel .carousel-items {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .carousel-item {
+  flex-shrink: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel .carousel-btns {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+
+.carousel .carousel-nav {
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.carousel .carousel-shade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, var(--white), var(--transparent));
+}
+
+.carousel .carousel-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carousel .carousel-progress button {
+  height: 14px;
+  width: 8px;
+  border: 1px solid var(--mid-dark);
+  border-radius: 8px;
+  transition: 1s all;
+}
+
+.carousel .carousel-progress .active {
+  background-color: var(--black);
+}

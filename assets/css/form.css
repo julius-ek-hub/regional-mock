@@ -1,0 +1,35 @@
+.form .body .form-container-outer > * {
+  display: block;
+  margin: 10px;
+  width: 100%;
+}
+
+.form .body .form-container-inner input,
+.form .body .form-container-inner select {
+  padding: 15px 10px;
+}
+.form .body .form-container-outer > *:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.form .body .form-container-outer input:focus {
+  outline: none;
+}
+
+.form .body .form-container-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.form .body .form-container-inner > * {
+  min-width: 30%;
+  flex-grow: 1;
+}
+.form .body .form-container-inner .section-title {
+  width: 100%;
+}
+.form .body .input-container > * {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}

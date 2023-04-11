@@ -1,0 +1,54 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  box-shadow: var(--light-dark) 0px 10px 10px -10px;
+  padding: 10px;
+  border-bottom: 1px solid var(--light-dark);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--white);
+}
+.nav .flexible {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .flexible .site-menu {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  align-items: center;
+  overflow: auto;
+  margin-left: 20px;
+}
+.nav .flexible .site-menu .admin {
+  border: 1px solid var(--black);
+  padding: 2px 6px;
+  border-radius: 14px;
+}
+.nav .flexible .site-menu a:last-child {
+  margin-left: 18px;
+}
+.site-title {
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.site-title img {
+  width: 25px;
+}
+
+@media screen and (min-width: 900px) {
+  .home-header .body {
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  .home-header .body .intro {
+    width: 44%;
+  }
+}
